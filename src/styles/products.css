@@ -1,0 +1,147 @@
+/* Product List */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 800px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.product-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.product-list::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.product-list::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Product Card */
+.product-card {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s;
+}
+
+.product-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.product-sku {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.product-base-id {
+  color: #6b7280;
+  font-size: 0.85rem;
+  font-family: 'Courier New', monospace;
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.detail-badge {
+  background: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+
+.product-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: white;
+  border-radius: 10px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.product-url {
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  word-break: break-all;
+}
+
+.product-url a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.product-url a:hover {
+  text-decoration: underline;
+}
+
+/* Units Section */
+.units-section {
+  margin-top: 20px;
+}
+
+.units-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
