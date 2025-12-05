@@ -1,0 +1,192 @@
+.thank-you-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.thank-you-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.thank-you-card.loading,
+.thank-you-card.error {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.thank-you-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.thank-you-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+  animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.thank-you-title {
+  font-size: 32px;
+  color: #2d3748;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.thank-you-subtitle {
+  font-size: 18px;
+  color: #718096;
+  margin: 0;
+}
+
+.thank-you-content {
+  margin-top: 30px;
+}
+
+.details-title {
+  font-size: 24px;
+  color: #2d3748;
+  margin: 0 0 25px 0;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e2e8f0;
+  font-weight: 600;
+}
+
+.purchase-details {
+  margin-bottom: 30px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f7fafc;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 16px;
+}
+
+.detail-value {
+  color: #2d3748;
+  font-size: 16px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.detail-item.serial-highlight {
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #667eea;
+  margin-bottom: 15px;
+}
+
+.detail-item.serial-highlight .detail-label {
+  color: #667eea;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.detail-item.serial-highlight .serial-value {
+  color: #1e40af;
+  font-weight: 700;
+  font-size: 17px;
+  font-family: 'Courier New', monospace;
+}
+
+.thank-you-footer {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid #e2e8f0;
+  text-align: center;
+}
+
+.footer-message {
+  font-size: 18px;
+  color: #4a5568;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+.footer-brand {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #718096;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .thank-you-card {
+    padding: 30px 20px;
+  }
+
+  .thank-you-title {
+    font-size: 26px;
+  }
+
+  .thank-you-subtitle {
+    font-size: 16px;
+  }
+
+  .details-title {
+    font-size: 20px;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .detail-value {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .thank-you-icon {
+    font-size: 60px;
+  }
+}
+

@@ -1,0 +1,80 @@
+/* QR Grid */
+.qr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.qr-item {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.qr-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+  transform: translateY(-2px);
+}
+
+.scan-status {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.scan-status.scanned {
+  background: #10b981;
+}
+
+.scan-status.unscanned {
+  background: #9ca3af;
+}
+
+.qr-canvas {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.qr-code-text {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+.qr-serial-number {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 12px;
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+.qr-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.scan-info {
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: #10b981;
+  font-weight: 600;
+}
